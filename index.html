@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+1`<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -142,26 +142,20 @@
       ============================================================ -->
 
       <!-- ADD REAL ARTICLE CARDS HERE — example below, uncomment when ready:
-
-      <a class="card" href="#" data-category="business" onclick="showArticle('article-2'); return false;">
-        <span class="card-tag tag-blue">Business</span>
-        <h3>Your Article Title Here</h3>
-        <p class="excerpt">Your 2-3 sentence preview here.</p>
-        <div class="card-meta">
-          <span>DATE</span>
-          <span class="dot">·</span>
-          <span>4 min read</span>
-        </div>
-      </a>
-
-      -->
+<a class="card" href="#" data-category="sports" onclick="showArticle('article-2'); return false;">
+  <span class="card-tag tag-amber">Sports & Business</span>
+  <h3>Why Wall Street Is Buying Into Your Favorite Sports Teams</h3>
+  <p class="excerpt">Private equity firms are pouring billions into professional sports and it is changing who owns your favorite teams and why. Here is what is actually happening.</p>
+  <div class="card-meta">
+    <span>March 29, 2026</span>
+    <span class="dot">·</span>
+    <span>5 min read</span>
+  </div>
+</a>
+    
 
       <!-- COMING SOON CARDS — delete these one by one as you add real articles -->
-      <div class="card-coming">
-        <div class="coming-icon">&#9998;</div>
-        <h3>Coming Soon</h3>
-        <p>Next issue drops in two weeks. Check back soon.</p>
-      </div>
+    
 
       <div class="card-coming">
         <div class="coming-icon">&#9998;</div>
@@ -254,6 +248,27 @@ const articles = {
       <p class="next-issue">Next issue: coming soon.</p>
     `
   }
+ ,'article-2': {
+  title: 'Why Wall Street Is Buying Into Your Favorite Sports Teams',
+  date: 'March 29, 2026',
+  readTime: '5 min read',
+  category: 'Sports & Business',
+  categoryClass: 'tag-amber',
+  body: `
+    <p>Something interesting is happening in the sports world that most fans are not paying attention to. The people buying into your favorite teams are no longer just billionaires who grew up rooting for them. Increasingly, they are private equity firms. And that changes a lot.</p>
+    <h2>What is private equity?</h2>
+    <p>Private equity firms are companies that pool together large amounts of money from investors and use it to buy stakes in businesses. The goal is simple: buy in, make the business more valuable, and eventually sell for a profit. For a long time sports teams were mostly off limits to these kinds of investors. The leagues did not allow it. That has changed dramatically over the past few years.</p>
+    <h2>How big has this gotten?</h2>
+    <p>Sports investment deals hit an eight year high in total value in 2025 according to S&P Global. Firms like Arctos Partners, RedBird Capital, and Sixth Street have built entire portfolios around owning pieces of professional sports teams across the NBA, NFL, MLB, and MLS. The NFL only opened its doors to private equity investment recently and firms jumped at the opportunity immediately. Revenue from sports teams is projected to grow from around $500 billion in 2025 to over $860 billion by 2033. That kind of growth gets Wall Street's attention fast.</p>
+    <h2>The most interesting story right now</h2>
+    <p>One of the biggest names in finance just entered the conversation in a new way. Blackstone, the largest alternative asset manager in the world, is reportedly considering a $200 to $300 million investment in an Indian Premier League cricket team. This would be Blackstone's first ever sports investment. When a firm that size moves into a market for the first time it usually signals that everyone else is about to follow.</p>
+    <h2>What about college sports?</h2>
+    <p>It is not just the pros. The University of Utah recently announced a deal with a private equity firm called Otro Capital worth up to $500 million. The university is essentially spinning off part of its athletic department to bring in outside investment. People in the industry are calling it a potential blueprint for how private equity could start flowing into college sports at scale. That would completely change what college athletics looks like financially.</p>
+    <h2>My take</h2>
+    <p>From a business perspective this trend makes total sense. Sports teams have loyal fan bases, massive media deals, and growing international audiences. They are about as recession proof as any investment gets. But there is a real question worth asking: when the people making decisions about your team care more about returns than winning, does that change the product on the field? That tension between profit and competition is something fans are going to have to think about a lot more going forward.</p>
+    <p class="next-issue">Next issue: coming soon.</p>
+  `
+}
 
   // ================================================================
   // ADD NEW ARTICLES BELOW THIS LINE
