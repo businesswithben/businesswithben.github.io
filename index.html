@@ -153,22 +153,25 @@
     <span>5 min read</span>
   </div>
 </a>
+     <a class="card" href="#" data-category="sports" onclick="showArticle('article-3'); return false;">
+  <span class="card-tag tag-amber">Sports & Business</span>
+  <h3>How NIL Changed College Sports Forever</h3>
+  <p class="excerpt">In 2021 college athletes were finally allowed to profit off their name, image, and likeness. What has happened since then has completely transformed the business of college sports.</p>
+  <div class="card-meta">
+    <span>April 10, 2026</span>
+    <span class="dot">·</span>
+    <span>5 min read</span>
+  </div>
+</a>
     
 
       <!-- COMING SOON CARDS — delete these one by one as you add real articles -->
     
-
-      <div class="card-coming">
-        <div class="coming-icon">&#9998;</div>
-        <h3>Coming Soon</h3>
-        <p>New articles published twice a month. Stay tuned.</p>
-      </div>
-
-      <div class="card-coming">
-        <div class="coming-icon">&#9998;</div>
-        <h3>Coming Soon</h3>
-        <p>Business, sports, and AI — more on the way.</p>
-      </div>
+<div class="card-coming">
+  <div class="coming-icon">&#9998;</div>
+  <h3>Coming Soon</h3>
+  <p>Business, sports, and AI — more on the way.</p>
+</div>
 
       <div class="card-coming">
         <div class="coming-icon">&#9998;</div>
@@ -289,6 +292,27 @@ const articles = {
   //   `
   // }
   // ================================================================
+ ,'article-3': {
+  title: 'How NIL Changed College Sports Forever',
+  date: 'April 10, 2026',
+  readTime: '5 min read',
+  category: 'Sports & Business',
+  categoryClass: 'tag-amber',
+  body: `
+    <p>Three letters changed college sports forever. NIL — name, image, and likeness — became legal for college athletes in July 2021 and what has happened since then is something nobody fully predicted. College athletics went from an industry where players could not make a single dollar off their own name to one where top recruits are signing deals worth millions before they ever play a college game.</p>
+    <h2>What NIL actually means</h2>
+    <p>Before 2021, the NCAA had a strict rule that college athletes could not profit off their name, image, or likeness in any way. No sponsorships, no paid appearances, no monetizing social media. The logic was that accepting money would make them professionals and therefore ineligible to compete. Meanwhile the NCAA was generating billions of dollars off those same athletes through ticket sales, television deals, and merchandise. The rule change finally allowed athletes to take their cut.</p>
+    <h2>How big has it gotten</h2>
+    <p>The numbers are staggering. In the first year alone NIL deals across college sports totaled nearly a billion dollars. By 2025 the market had grown to well over two billion annually. The top earners are not just football and basketball players either. Athletes in sports like gymnastics, swimming, and volleyball have built massive social media followings and turned them into serious income. LSU gymnast Olivia Dunne became one of the highest earning college athletes in the country not because of her sport alone but because of her 12 million social media followers.</p>
+    <h2>The rise of collectives</h2>
+    <p>One of the biggest developments nobody saw coming was the rise of NIL collectives. These are booster funded organizations that pool money specifically to pay athletes at a particular school. Fans essentially formed legal organizations to pay players to attend or stay at their favorite programs. What used to happen under the table is now happening openly and it has completely transformed recruiting. The best high school players in the country are now choosing schools based in part on which collective is offering the most money.</p>
+    <h2>What this means for college sports</h2>
+    <p>The old idea of college sports — student athletes competing purely for love of the game and a scholarship — is basically gone at the highest level. The Power Four conferences now operate more like a minor league system than a traditional college sports model. Schools that can raise the most NIL money have a massive recruiting advantage and the gap between the richest programs and everyone else is growing fast.</p>
+    <h2>My take</h2>
+    <p>NIL was the right thing to do. Athletes were the only people in a billion dollar industry not getting paid and that was never fair. But the way it has played out has created a system where money dominates recruiting more than ever before. Whether that makes college sports better or worse probably depends on whether your school has a well funded collective. Either way there is no going back and the business of college sports will never look the same.</p>
+    <p class="next-issue">Next issue: coming soon.</p>
+  `
+}
 
 };
 
