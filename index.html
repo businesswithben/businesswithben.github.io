@@ -1,4 +1,4 @@
-1`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -56,13 +56,9 @@
   .card-tag { display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: 0.8px; text-transform: uppercase; padding: 4px 10px; border-radius: 20px; margin-bottom: 14px; }
   .card h3 { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 600; line-height: 1.3; color: var(--text-primary); margin-bottom: 10px; letter-spacing: -0.2px; }
   .card .excerpt { font-size: 13px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 18px; }
-
-  /* COMING SOON CARD */
   .card-coming { background: var(--bg-secondary); border: 0.5px dashed var(--border-hover); border-radius: var(--radius-lg); padding: 24px 26px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; min-height: 160px; }
-  .card-coming .coming-icon { font-size: 20px; margin-bottom: 10px; opacity: 0.4; }
   .card-coming h3 { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; }
   .card-coming p { font-size: 12px; color: var(--text-secondary); opacity: 0.7; line-height: 1.5; }
-
   .about-strip { background: var(--bg-primary); border: 0.5px solid var(--border); border-radius: var(--radius-lg); padding: 26px 30px; display: flex; align-items: center; gap: 20px; }
   .avatar { width: 54px; height: 54px; border-radius: 50%; background: var(--blue-bg); display: flex; align-items: center; justify-content: center; font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 600; color: var(--blue); flex-shrink: 0; }
   .about-text h4 { font-size: 14px; font-weight: 500; margin-bottom: 5px; }
@@ -99,31 +95,27 @@
 <div class="home-page" id="home-page">
   <div class="hero">
     <div class="hero-eyebrow">A student's take on the future of business</div>
-    <h1>Where Business,<br>Sports & AI Intersect</h1>
-    <p>Twice-monthly analysis on the trends reshaping markets, sports, and technology — written by a high school sophomore on Long Island.</p>
+    <h1>Where Business,<br>Sports &amp; AI Intersect</h1>
+    <p>Twice-monthly analysis on the trends reshaping markets, sports, and technology, written by a high school sophomore on Long Island.</p>
     <div class="tag-row">
-      <span class="tag tag-blue">Business & Finance</span>
+      <span class="tag tag-blue">Business &amp; Finance</span>
       <span class="tag tag-amber">Sports Industry</span>
-      <span class="tag tag-green">AI & Technology</span>
+      <span class="tag tag-green">AI &amp; Technology</span>
     </div>
   </div>
 
   <div class="main">
     <div class="section-label">Latest Issue</div>
 
-    <!-- ============================================================
-         FEATURED ARTICLE — update with your most recent article
-         Change: badge text, h2, excerpt, date, and onclick article id
-    ============================================================ -->
- <a class="featured-card" href="#" onclick="showArticle('article-3'); return false;">
+    <a class="featured-card" href="#" onclick="showArticle('article-3'); return false;">
       <div class="featured-inner">
-     <div class="featured-badge">Featured · Sports & Business</div>
-      <h2>How NIL Changed College Sports Forever</h2>
-    <p class="excerpt">In 2021 college athletes were finally allowed to profit off their name, image, and likeness. What has happened since then has completely transformed the business of college sports.</p>
+        <div class="featured-badge">Featured · Sports &amp; Business</div>
+        <h2>How NIL Changed College Sports Forever</h2>
+        <p class="excerpt">In 2021 college athletes were finally allowed to profit off their name, image, and likeness. What has happened since then has completely transformed the business of college sports.</p>
         <div class="card-meta">
           <span>Ben</span>
           <span class="dot">·</span>
-        <span>April 10, 2026</span>
+          <span>April 10, 2026</span>
           <span class="dot">·</span>
           <span>5 min read</span>
         </div>
@@ -134,59 +126,36 @@
 
     <div class="grid" id="article-grid">
 
-      <!-- ============================================================
-           ARTICLE CARD — replace a "coming soon" card with this when ready
-           data-category: "business" | "sports" | "ai"
-           card-tag class: tag-blue | tag-amber | tag-green
-           onclick: must match the article id in the JS below
-      ============================================================ -->
+      <a class="card" href="#" data-category="sports" onclick="showArticle('article-2'); return false;">
+        <span class="card-tag tag-amber">Sports &amp; Business</span>
+        <h3>Why Wall Street Is Buying Into Your Favorite Sports Teams</h3>
+        <p class="excerpt">Private equity firms are pouring billions into professional sports and it is changing who owns your favorite teams and why.</p>
+        <div class="card-meta">
+          <span>March 29, 2026</span>
+          <span class="dot">·</span>
+          <span>5 min read</span>
+        </div>
+      </a>
 
-   <!-- ADD REAL ARTICLE CARDS HERE -->
-
-     <a class="card" href="#" data-category="sports" onclick="showArticle('article-2'); return false;">
-  <span class="card-tag tag-amber">Sports & Business</span>
-  <h3>Why Wall Street Is Buying Into Your Favorite Sports Teams</h3>
-  <p class="excerpt">Private equity firms are pouring billions into professional sports and it is changing who owns your favorite teams and why.</p>
-  <div class="card-meta">
-    <span>March 29, 2026</span>
-    <span class="dot">·</span>
-    <span>5 min read</span>
-  </div>
-</a>
-     <a class="card" href="#" data-category="sports" onclick="showArticle('article-1'); return false;">
-  <span class="card-tag tag-amber">Sports & AI</span>
-  <h3>How AI is Changing the Business of Sports</h3>
-  <p class="excerpt">From dynamic ticket pricing to franchise valuations, the biggest names in sports are embedding AI into how they operate — and it's making the smartest organizations worth a lot more money.</p>
-  <div class="card-meta">
-    <span>March 21, 2026</span>
-    <span class="dot">·</span>
-    <span>5 min read</span>
-  </div>
-</a>
-     <a class="card" href="#" data-category="sports" onclick="showArticle('article-3'); return false;">
-  <span class="card-tag tag-amber">Sports & Business</span>
-  <h3>How NIL Changed College Sports Forever</h3>
-  <p class="excerpt">In 2021 college athletes were finally allowed to profit off their name, image, and likeness. What has happened since then has completely transformed the business of college sports.</p>
-  <div class="card-meta">
-    <span>April 10, 2026</span>
-    <span class="dot">·</span>
-    <span>5 min read</span>
-  </div>
-</a>
-    
-
-      <!-- COMING SOON CARDS — delete these one by one as you add real articles -->
-    
-<div class="card-coming">
-  <div class="coming-icon">&#9998;</div>
-  <h3>Coming Soon</h3>
-  <p>Business, sports, and AI — more on the way.</p>
-</div>
+      <a class="card" href="#" data-category="sports" onclick="showArticle('article-1'); return false;">
+        <span class="card-tag tag-amber">Sports &amp; AI</span>
+        <h3>How AI is Changing the Business of Sports</h3>
+        <p class="excerpt">From dynamic ticket pricing to franchise valuations, the biggest names in sports are embedding AI into how they operate and it is making the smartest organizations worth a lot more money.</p>
+        <div class="card-meta">
+          <span>March 21, 2026</span>
+          <span class="dot">·</span>
+          <span>5 min read</span>
+        </div>
+      </a>
 
       <div class="card-coming">
-        <div class="coming-icon">&#9998;</div>
         <h3>Coming Soon</h3>
-        <p>New issues every two weeks. More coming soon.</p>
+        <p>New articles every two weeks. Stay tuned.</p>
+      </div>
+
+      <div class="card-coming">
+        <h3>Coming Soon</h3>
+        <p>Business, sports, and AI. More on the way.</p>
       </div>
 
     </div>
@@ -195,17 +164,15 @@
       <div class="avatar">B</div>
       <div class="about-text">
         <h4>Written by Ben</h4>
-        <!-- UPDATE BIO AS NEEDED -->
         <p>I'm Ben, a sophomore at Syosset High School on Long Island. I have a passion for business, AI, and sports, and I started this site as a place to bring it all together. Every issue I break down what's happening in the business world, where AI is headed, and how both are reshaping the sports industry I've grown up playing as a two-sport athlete. New issues every two weeks.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ARTICLE PAGE — DO NOT EDIT THIS SECTION -->
 <div class="article-page" id="article-page">
   <div class="main">
-    <button class="back-btn" onclick="showHome()">← Back to all articles</button>
+    <button class="back-btn" onclick="showHome()">&#8592; Back to all articles</button>
     <div class="article-header">
       <div class="card-meta" style="margin-bottom:14px;" id="article-meta"></div>
       <h1 id="article-title"></h1>
@@ -215,128 +182,45 @@
 </div>
 
 <footer>
-  © 2026 Business with Ben · Published twice monthly · Long Island, NY
+  &copy; 2026 Business with Ben &middot; Published twice monthly &middot; Long Island, NY
 </footer>
-
 <script>
-// ================================================================
-// ARTICLES — PASTE YOUR FULL ARTICLE CONTENT HERE
-// ================================================================
-// HOW TO ADD A NEW ARTICLE:
-//   1. Copy the template block at the bottom
-//   2. Change the id (e.g. 'article-2', 'article-3', etc.)
-//   3. Fill in all the fields
-//   4. Add a matching card in the HTML above
-//   5. Delete one "coming soon" card from the HTML above
-//
-// BODY FORMATTING:
-//   Each paragraph:  <p>Your text here.</p>
-//   Subheadings:     <h2>Your Heading</h2>
-//   Closing teaser:  <p class="next-issue">Next issue: ...</p>
-// ================================================================
+var articles = {
 
-const articles = {
-
-  // ================================================================
-  // ARTICLE 1 — FEATURED
-  // ================================================================
   'article-1': {
     title: 'How AI is Changing the Business of Sports',
     date: 'March 21, 2026',
     readTime: '5 min read',
     category: 'Sports & AI',
     categoryClass: 'tag-amber',
-    body: `
-    <p>Sports and business have always been connected. But for most of history, the decisions that drove both were made almost entirely on instinct and experience. Coaches trusted their eye. Executives trusted their gut.</p>
-    <p>That's starting to change in a pretty significant way.</p>
-    <h2>AI is entering the front office</h2>
-    <p>Most people think of AI in sports as something that happens on the field, tracking player movement, preventing injuries, and analyzing film. And that's real. But what's less talked about is how much AI is reshaping the business side of sports, which is honestly just as interesting.</p>
-    <p>Take ticket pricing. Teams like the Golden State Warriors and the Dallas Cowboys now use dynamic pricing models powered by AI that adjust ticket prices in real time based on demand, opponent, weather, and even social media buzz around a specific game. It's not that different from how airlines price flights. The goal is simple, make sure every seat is sold at the highest price the market will actually bear.</p>
-    <p>Sponsorship is another area where this is showing up. Brands used to pay for stadium naming rights or jersey patches based on rough estimates of viewership and exposure. Now companies are using AI to measure exactly how many times a logo appears on screen during a broadcast, for how long, and in front of how many eyes. Sponsorship deals are becoming data contracts as much as they are marketing ones.</p>
-    <h2>What this means for team valuations</h2>
-    <p>Here's where it gets really interesting from a business perspective. AI is starting to influence how sports franchises are actually valued. Investors are looking at things like a team's data infrastructure, their analytics capabilities, and how efficiently they're converting fan engagement into revenue. The franchises building strong AI systems aren't just winning more games, they're becoming worth more money.</p>
-    <p>The average NFL team is now valued at over $5 billion. A big part of what separates the top franchises from the rest isn't just market size anymore, it's how intelligently they're operating.</p>
-    <h2>My take</h2>
-    <p>As someone who plays sports and follows business, I find this intersection genuinely fascinating. The teams that figure out how to combine strong analytics with good leadership are going to have a real advantage both on the field and on the balance sheet. AI isn't replacing the human side of sports. It's just making the smartest organizations smarter.</p>
-    <p>That gap is only going to grow.</p>
-    <p class="next-issue">Next issue: coming soon.</p>
-    `
-  }
- ,'article-2': {
-  title: 'Why Wall Street Is Buying Into Your Favorite Sports Teams',
-  date: 'March 29, 2026',
-  readTime: '5 min read',
-  category: 'Sports & Business',
-  categoryClass: 'tag-amber',
-  body: `
-    <p>Something interesting is happening in the sports world that most fans are not paying attention to. The people buying into your favorite teams are no longer just billionaires who grew up rooting for them. Increasingly, they are private equity firms. And that changes a lot.</p>
-    <h2>What is private equity?</h2>
-    <p>Private equity firms are companies that pool together large amounts of money from investors and use it to buy stakes in businesses. The goal is simple: buy in, make the business more valuable, and eventually sell for a profit. For a long time sports teams were mostly off limits to these kinds of investors. The leagues did not allow it. That has changed dramatically over the past few years.</p>
-    <h2>How big has this gotten?</h2>
-    <p>Sports investment deals hit an eight year high in total value in 2025 according to S&P Global. Firms like Arctos Partners, RedBird Capital, and Sixth Street have built entire portfolios around owning pieces of professional sports teams across the NBA, NFL, MLB, and MLS. The NFL only opened its doors to private equity investment recently and firms jumped at the opportunity immediately. Revenue from sports teams is projected to grow from around $500 billion in 2025 to over $860 billion by 2033. That kind of growth gets Wall Street's attention fast.</p>
-    <h2>The most interesting story right now</h2>
-    <p>One of the biggest names in finance just entered the conversation in a new way. Blackstone, the largest alternative asset manager in the world, is reportedly considering a $200 to $300 million investment in an Indian Premier League cricket team. This would be Blackstone's first ever sports investment. When a firm that size moves into a market for the first time it usually signals that everyone else is about to follow.</p>
-    <h2>What about college sports?</h2>
-    <p>It is not just the pros. The University of Utah recently announced a deal with a private equity firm called Otro Capital worth up to $500 million. The university is essentially spinning off part of its athletic department to bring in outside investment. People in the industry are calling it a potential blueprint for how private equity could start flowing into college sports at scale. That would completely change what college athletics looks like financially.</p>
-    <h2>My take</h2>
-    <p>From a business perspective this trend makes total sense. Sports teams have loyal fan bases, massive media deals, and growing international audiences. They are about as recession proof as any investment gets. But there is a real question worth asking: when the people making decisions about your team care more about returns than winning, does that change the product on the field? That tension between profit and competition is something fans are going to have to think about a lot more going forward.</p>
-    <p class="next-issue">Next issue: coming soon.</p>
-  `
-}
+    body: '<p>Sports and business have always been connected. But for most of history, the decisions that drove both were made almost entirely on instinct and experience. Coaches trusted their eye. Executives trusted their gut.</p><p>That is starting to change in a pretty significant way.</p><h2>AI is entering the front office</h2><p>Most people think of AI in sports as something that happens on the field, tracking player movement, preventing injuries, and analyzing film. And that is real. But what is less talked about is how much AI is reshaping the business side of sports, which is honestly just as interesting.</p><p>Take ticket pricing. Teams like the Golden State Warriors and the Dallas Cowboys now use dynamic pricing models powered by AI that adjust ticket prices in real time based on demand, opponent, weather, and even social media buzz around a specific game. It is not that different from how airlines price flights. The goal is simple. Make sure every seat is sold at the highest price the market will actually bear.</p><p>Sponsorship is another area where this is showing up. Brands used to pay for stadium naming rights or jersey patches based on rough estimates of viewership and exposure. Now companies are using AI to measure exactly how many times a logo appears on screen during a broadcast, for how long, and in front of how many eyes. Sponsorship deals are becoming data contracts as much as they are marketing ones.</p><h2>What this means for team valuations</h2><p>Here is where it gets really interesting from a business perspective. AI is starting to influence how sports franchises are actually valued. Investors are looking at things like a team\'s data infrastructure, their analytics capabilities, and how efficiently they are converting fan engagement into revenue. The franchises building strong AI systems are not just winning more games. They are becoming worth more money.</p><p>The average NFL team is now valued at over $5 billion. A big part of what separates the top franchises from the rest is not just market size anymore. It is how intelligently they are operating.</p><h2>My take</h2><p>As someone who plays sports and follows business, I find this intersection genuinely fascinating. The teams that figure out how to combine strong analytics with good leadership are going to have a real advantage both on the field and on the balance sheet. AI is not replacing the human side of sports. It is just making the smartest organizations smarter.</p><p>That gap is only going to grow.</p><p class="next-issue">Next issue: coming soon.</p>'
+  },
 
-  // ================================================================
-  // ADD NEW ARTICLES BELOW THIS LINE
-  // Copy this template and fill it in:
-  //
-  // ,'article-2': {
-  //   title: 'Your Title Here',
-  //   date: 'April 4, 2026',
-  //   readTime: '4 min read',
-  //   category: 'Business',         // Business | Sports | AI | Sports & AI | Business & AI
-  //   categoryClass: 'tag-blue',    // tag-blue | tag-amber | tag-green
-  //   body: `
-  //     <p>Your first paragraph here.</p>
-  //     <h2>Your Subheading</h2>
-  //     <p>More content here.</p>
-  //     <p class="next-issue">Next issue: tease your next article here.</p>
-  //   `
-  // }
-  // ================================================================
- ,'article-3': {
-  title: 'How NIL Changed College Sports Forever',
-  date: 'April 10, 2026',
-  readTime: '5 min read',
-  category: 'Sports & Business',
-  categoryClass: 'tag-amber',
-  body: `
-  <p>Three letters changed college sports forever. NIL stands for name, image, and likeness. It became legal for college athletes in July 2021 and what has happened since then is something nobody fully predicted. College athletics went from an industry where players could not make a single dollar off their own name to one where top recruits are signing deals worth millions before they ever play a college game.</p>
-    <h2>What NIL actually means</h2>
-    <p>Before 2021 the NCAA had a strict rule that college athletes could not profit off their name, image, or likeness in any way. No sponsorships, no paid appearances, no monetizing social media. The logic was that accepting money would make them professionals and therefore ineligible to compete. Meanwhile the NCAA was generating billions of dollars off those same athletes through ticket sales, television deals, and merchandise. The rule change finally allowed athletes to take their cut.</p>
-    <h2>How big has it gotten</h2>
-    <p>The numbers are staggering. In the first year alone NIL deals across college sports totaled nearly a billion dollars. By 2025 the market had grown to well over two billion annually. The top earners are not just football and basketball players either. Athletes in sports like gymnastics, swimming, and volleyball have built massive social media followings and turned them into serious income. LSU gymnast Olivia Dunne became one of the highest earning college athletes in the country not because of her sport alone but because of her 12 million social media followers.</p>
-    <h2>The rise of collectives</h2>
-    <p>One of the biggest developments nobody saw coming was the rise of NIL collectives. These are booster funded organizations that pool money specifically to pay athletes at a particular school. Fans essentially formed legal organizations to pay players to attend or stay at their favorite programs. What used to happen under the table is now happening openly and it has completely transformed recruiting. The best high school players in the country are now choosing schools based in part on which collective is offering the most money.</p>
-    <h2>What this means for college sports</h2>
-    <p>The old idea of college sports where student athletes competed purely for love of the game and a scholarship is basically gone at the highest level. The Power Four conferences now operate more like a minor league system than a traditional college sports model. Schools that can raise the most NIL money have a massive recruiting advantage and the gap between the richest programs and everyone else is growing fast.</p>
-    <h2>My take</h2>
-    <p>NIL was the right thing to do. Athletes were the only people in a billion dollar industry not getting paid and that was never fair. But the way it has played out has created a system where money dominates recruiting more than ever before. Whether that makes college sports better or worse probably depends on whether your school has a well funded collective. Either way there is no going back and the business of college sports will never look the same.</p>
-    <p class="next-issue">Next issue: coming soon.</p>
-}
+  'article-2': {
+    title: 'Why Wall Street Is Buying Into Your Favorite Sports Teams',
+    date: 'March 29, 2026',
+    readTime: '5 min read',
+    category: 'Sports & Business',
+    categoryClass: 'tag-amber',
+    body: '<p>Something interesting is happening in the sports world that most fans are not paying attention to. The people buying into your favorite teams are no longer just billionaires who grew up rooting for them. Increasingly they are private equity firms. And that changes a lot.</p><h2>What is private equity?</h2><p>Private equity firms are companies that pool together large amounts of money from investors and use it to buy stakes in businesses. The goal is simple. Buy in, make the business more valuable, and eventually sell for a profit. For a long time sports teams were mostly off limits to these kinds of investors. The leagues did not allow it. That has changed dramatically over the past few years.</p><h2>How big has this gotten?</h2><p>Sports investment deals hit an eight year high in total value in 2025 according to S&P Global. Firms like Arctos Partners, RedBird Capital, and Sixth Street have built entire portfolios around owning pieces of professional sports teams across the NBA, NFL, MLB, and MLS. Revenue from sports teams is projected to grow from around $500 billion in 2025 to over $860 billion by 2033. That kind of growth gets Wall Street attention fast.</p><h2>The most interesting story right now</h2><p>One of the biggest names in finance just entered the conversation in a new way. Blackstone, the largest alternative asset manager in the world, is reportedly considering a $200 to $300 million investment in an Indian Premier League cricket team. This would be Blackstone first ever sports investment. When a firm that size moves into a market for the first time it usually signals that everyone else is about to follow.</p><h2>What about college sports?</h2><p>It is not just the pros. The University of Utah recently announced a deal with a private equity firm called Otro Capital worth up to $500 million. The university is essentially spinning off part of its athletic department to bring in outside investment. People in the industry are calling it a potential blueprint for how private equity could start flowing into college sports at scale.</p><h2>My take</h2><p>From a business perspective this trend makes total sense. Sports teams have loyal fan bases, massive media deals, and growing international audiences. They are about as recession proof as any investment gets. But there is a real question worth asking. When the people making decisions about your team care more about returns than winning, does that change the product on the field? That tension between profit and competition is something fans are going to have to think about a lot more going forward.</p><p class="next-issue">Next issue: coming soon.</p>'
+  },
+
+  'article-3': {
+    title: 'How NIL Changed College Sports Forever',
+    date: 'April 10, 2026',
+    readTime: '5 min read',
+    category: 'Sports & Business',
+    categoryClass: 'tag-amber',
+    body: '<p>Three letters changed college sports forever. NIL stands for name, image, and likeness. It became legal for college athletes in July 2021 and what has happened since then is something nobody fully predicted. College athletics went from an industry where players could not make a single dollar off their own name to one where top recruits are signing deals worth millions before they ever play a college game.</p><h2>What NIL actually means</h2><p>Before 2021 the NCAA had a strict rule that college athletes could not profit off their name, image, or likeness in any way. No sponsorships, no paid appearances, no monetizing social media. The logic was that accepting money would make them professionals and therefore ineligible to compete. Meanwhile the NCAA was generating billions of dollars off those same athletes through ticket sales, television deals, and merchandise. The rule change finally allowed athletes to take their cut.</p><h2>How big has it gotten</h2><p>The numbers are staggering. In the first year alone NIL deals across college sports totaled nearly a billion dollars. By 2025 the market had grown to well over two billion annually. The top earners are not just football and basketball players either. Athletes in sports like gymnastics, swimming, and volleyball have built massive social media followings and turned them into serious income. LSU gymnast Olivia Dunne became one of the highest earning college athletes in the country not because of her sport alone but because of her 12 million social media followers.</p><h2>The rise of collectives</h2><p>One of the biggest developments nobody saw coming was the rise of NIL collectives. These are booster funded organizations that pool money specifically to pay athletes at a particular school. Fans essentially formed legal organizations to pay players to attend or stay at their favorite programs. What used to happen under the table is now happening openly and it has completely transformed recruiting. The best high school players in the country are now choosing schools based in part on which collective is offering the most money.</p><h2>What this means for college sports</h2><p>The old idea of college sports where student athletes competed purely for love of the game and a scholarship is basically gone at the highest level. The Power Four conferences now operate more like a minor league system than a traditional college sports model. Schools that can raise the most NIL money have a massive recruiting advantage and the gap between the richest programs and everyone else is growing fast.</p><h2>My take</h2><p>NIL was the right thing to do. Athletes were the only people in a billion dollar industry not getting paid and that was never fair. But the way it has played out has created a system where money dominates recruiting more than ever before. Whether that makes college sports better or worse probably depends on whether your school has a well funded collective. Either way there is no going back and the business of college sports will never look the same.</p><p class="next-issue">Next issue: coming soon.</p>'
+  }
 
 };
 
-// DO NOT EDIT BELOW THIS LINE
 function showArticle(id) {
-  const a = articles[id];
+  var a = articles[id];
   if (!a) return;
   document.getElementById('article-title').textContent = a.title;
-  document.getElementById('article-meta').innerHTML = `
-    <span class="tag card-tag ${a.categoryClass}" style="margin-bottom:0;">${a.category}</span>
-    <span class="dot">·</span>
-    <span>${a.date}</span>
-    <span class="dot">·</span>
-    <span>${a.readTime}</span>
-  `;
+  document.getElementById('article-meta').innerHTML = '<span class="tag card-tag ' + a.categoryClass + '" style="margin-bottom:0;">' + a.category + '</span><span style="opacity:0.35;font-size:12px;color:var(--text-secondary);">·</span><span style="font-size:12px;color:var(--text-secondary);">' + a.date + '</span><span style="opacity:0.35;font-size:12px;color:var(--text-secondary);">·</span><span style="font-size:12px;color:var(--text-secondary);">' + a.readTime + '</span>';
   document.getElementById('article-body').innerHTML = a.body;
   document.getElementById('home-page').classList.add('hidden');
   document.getElementById('article-page').classList.add('visible');
@@ -351,18 +235,18 @@ function showHome() {
 
 function filterArticles(category, el) {
   showHome();
-  document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+  document.querySelectorAll('nav a').forEach(function(a) { a.classList.remove('active'); });
   el.classList.add('active');
-  const cards = document.querySelectorAll('#article-grid .card');
-  cards.forEach(card => {
-    const cat = card.dataset.category || '';
+  var cards = document.querySelectorAll('#article-grid .card');
+  cards.forEach(function(card) {
+    var cat = card.dataset.category || '';
     card.style.display = (category === 'all' || cat.includes(category)) ? 'block' : 'none';
   });
 }
 
 function showAbout() {
   showHome();
-  setTimeout(() => {
+  setTimeout(function() {
     document.querySelector('.about-strip').scrollIntoView({ behavior: 'smooth' });
   }, 50);
 }
